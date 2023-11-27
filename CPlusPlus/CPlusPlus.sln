@@ -110,7 +110,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shader이론", "Shader이론", "{A2344C35-4686-4F48-8FB9-FDFE90851329}"
 	ProjectSection(SolutionItems) = preProject
 		Compute&SturcteredBuffer.txt = Compute&SturcteredBuffer.txt
-		ComputeShader.txt = ComputeShader.txt
 		GeoMetryShader.txt = GeoMetryShader.txt
 		Shader이론.txt = Shader이론.txt
 	EndProjectSection
@@ -118,6 +117,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "운영체제", "운영체제", "{17C7BF6F-50C5-446A-80EA-821B3A1A1FE2}"
 	ProjectSection(SolutionItems) = preProject
 		10. 명령어 병렬처리 기법 = 10. 명령어 병렬처리 기법
+		11. CISC&RISC.txt = 11. CISC&RISC.txt
+		12. RAM 특성 및 종류 = 12. RAM 특성 및 종류
 		5. C언어 컴파일 과정 = 5. C언어 컴파일 과정
 		6. ALU와 제어장치 = 6. ALU와 제어장치
 		7. 레지스터 = 7. 레지스터
@@ -129,6 +130,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "운영체제", "운영체�
 		쓰레드기초.txt = 쓰레드기초.txt
 		컴퓨터 구조.txt = 컴퓨터 구조.txt
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "57_String", "57_String\57_String.vcxproj", "{604E97EF-9AF3-4490-96E0-9870D726A26D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "58_String_view", "58_String_view\58_String_view.vcxproj", "{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -506,6 +511,22 @@ Global
 		{CFE2F8F7-3CB5-4DF4-A876-4794F324E39A}.Release|x64.Build.0 = Release|x64
 		{CFE2F8F7-3CB5-4DF4-A876-4794F324E39A}.Release|x86.ActiveCfg = Release|Win32
 		{CFE2F8F7-3CB5-4DF4-A876-4794F324E39A}.Release|x86.Build.0 = Release|Win32
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Debug|x64.ActiveCfg = Debug|x64
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Debug|x64.Build.0 = Debug|x64
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Debug|x86.ActiveCfg = Debug|Win32
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Debug|x86.Build.0 = Debug|Win32
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Release|x64.ActiveCfg = Release|x64
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Release|x64.Build.0 = Release|x64
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Release|x86.ActiveCfg = Release|Win32
+		{604E97EF-9AF3-4490-96E0-9870D726A26D}.Release|x86.Build.0 = Release|Win32
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Debug|x64.ActiveCfg = Debug|x64
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Debug|x64.Build.0 = Debug|x64
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Debug|x86.ActiveCfg = Debug|Win32
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Debug|x86.Build.0 = Debug|Win32
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Release|x64.ActiveCfg = Release|x64
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Release|x64.Build.0 = Release|x64
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Release|x86.ActiveCfg = Release|Win32
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -562,6 +583,8 @@ Global
 		{CFE2F8F7-3CB5-4DF4-A876-4794F324E39A} = {45D45C9F-0C1E-49F8-99C3-79B326DC6589}
 		{A2344C35-4686-4F48-8FB9-FDFE90851329} = {6C93FE0F-429D-4E20-811F-8921840CD442}
 		{17C7BF6F-50C5-446A-80EA-821B3A1A1FE2} = {6C93FE0F-429D-4E20-811F-8921840CD442}
+		{604E97EF-9AF3-4490-96E0-9870D726A26D} = {54FBC83B-5E6D-40DB-A3E6-C9F4A2F7590A}
+		{9A87A7AA-C5DD-4A01-B48A-0E2A4FA30CD8} = {54FBC83B-5E6D-40DB-A3E6-C9F4A2F7590A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {847AC65B-3EE3-4C7C-A045-D89C4D2A57B9}
