@@ -1,0 +1,25 @@
+
+참고 문서
+https://www.delftstack.com/ko/howto/cpp/read-csv-file-in-cpp/
+
+== CSV ==
+{
+	- 텍스트 형식의 쉼표 구분
+	- 테이블 형식을 저장하는데 사용
+	- (Custom) 쉼표로 구분된 필드 사이에 공백이 있거나 없을 수도 있음
+
+	== 행 ==
+	{
+		- 데이터 레코드
+		- 둘 이상의 필드
+	}
+
+	== 구현 방식 ==
+	{
+		- std::string 객체에 저장
+		- std::ostringstream 및 rdbuf를 사용하여 파일을 읽고 string값을 호출자 함수에 반환
+			--> std::string 객체에서 std::istringstream을 생성하고 각 행을 반복 
+			--> 반복에서는 라인의 각 필드를 추출하고 std::vector에 저장하는 또 다른 루프를 넣음
+	}
+
+}
