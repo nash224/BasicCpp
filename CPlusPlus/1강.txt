@@ -1,0 +1,59 @@
+
+
+== 목 차 == 
+
+
+
+
+
+
+
+== Keyword == 
+객체지향
+캡슐화
+추상화
+다형성
+상속
+자료구조
+
+설명의 원칙
+1. 원론
+2. 
+3.
+
+stack
+queue
+{
+	서클큐 -> 반복자로 무한 루프를 할 수 있는 자료구조
+}
+
+List
+Map
+vector
+stack lifo
+queue fifo
+unordered_map
+
+allocator 
+hash
+
+
+Unordered_map
+{
+	Hash
+	{
+		데이터를 숫자로 변환
+	}
+
+	해쉬 기반으로 만들어짐
+	Pair 구조를 가짐
+	정렬이 안된다.
+	스핀이 없음
+
+	맵 배열에서 
+}
+
+함수객체
+{
+	class를 함수처럼 사용하는 객체
+}

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 // std::string
 //      - basic_string의 클래스 템플릿의 인스턴스화 버전이다.
@@ -102,4 +103,5 @@ int main()
 		std::string s2 = "short sentence";
 		std::cout << "s2 크기 : " << sizeof(s2) << std::endl;
 	}
+	
 }

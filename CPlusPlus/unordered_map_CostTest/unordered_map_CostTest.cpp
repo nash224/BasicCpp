@@ -120,8 +120,6 @@ StatusFlag MyUmap::FindIndex(Status _Type)
 }
 
 
-
-
 int main()
 {
 	MyUmap Umap;
