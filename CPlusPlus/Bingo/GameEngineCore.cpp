@@ -9,7 +9,7 @@
 
 #include <locale.h>
 
-#define FRAME 1.f / 3.0f
+#define FRAME 1.f / 6.0f
 
 GameEngineTime GameEngineCore::s_MainTime;
 GameEngineScreen GameEngineCore::s_MainRender;

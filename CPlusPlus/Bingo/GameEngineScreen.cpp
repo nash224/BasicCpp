@@ -107,16 +107,17 @@ void GameEngineScreen::Render()
 
 	const std::uint32_t height = static_cast<std::uint32_t>(Buffer.size());
 	const std::uint32_t width  = static_cast<std::uint32_t>(Buffer[0].size());
+	std::wstring MSGwStr;
 
 	for (std::uint32_t y = 0; y < height; y++)
 	{
 		for (std::uint32_t x = 0; x < width; x++)
 		{
-			std::wcout << Buffer[y][x];
-			// std::wcout << L"¤·";
+			MSGwStr.push_back(Buffer[y][x]);
 		}
 
-		std::wcout << std::endl;
+		std::wcout << MSGwStr << std::endl;
+		MSGwStr.clear();
 	}
 }
 
