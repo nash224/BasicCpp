@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="PreCompile.cpp">
+      <Filter>PreCompile</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineDebug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineRandom.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineTime.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineCore.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineObject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineObjectManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineScreen.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSet.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Bingo.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreObject.cpp">
+      <Filter>Client\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineInput.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineMath.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="UI_ConsoleMessage.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreCompile.h">
+      <Filter>PreCompile</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineDebug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineRandom.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineTime.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineCore.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineObjectManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineScreen.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSet.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Bingo.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreObject.h">
+      <Filter>Client\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineInput.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsEnum.h">
+      <Filter>Client\Enum</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineMath.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_ConsoleMessage.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PreCompile">
+      <UniqueIdentifier>{d3a8bc9c-c71d-4e83-b02d-34cc3f67b436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{759f4deb-64dd-44ff-a509-48d9ff13be03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{d03e00e9-de6b-4fa9-9283-efb3b26179ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{df58c071-03e8-4d3c-bfac-7c4856998f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0c9375de-065d-4824-96d6-3d62aa1be195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{0b574e3b-4081-4872-95b8-7e604a4117c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Core">
+      <UniqueIdentifier>{5d75efa3-0ca9-4af6-b992-f168fad520e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client\Enum">
+      <UniqueIdentifier>{4c8170f6-ac3d-49df-b926-c55295751951}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
