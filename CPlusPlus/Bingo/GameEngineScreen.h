@@ -18,6 +18,11 @@ public:
 protected:
 
 private:
+	void WriteMSGString();
+	std::uint32_t GetSizeToScreenBuffer();
+	std::uint32_t GetSizeToScreenTarget();
+
+private:
 	// constrcuter destructer
 	GameEngineScreen();
 	~GameEngineScreen();
@@ -30,6 +35,7 @@ private:
 
 private:
 	std::vector<std::vector<wchar_t>> Buffer;
+	std::wstring AllMSG_WSTR;
 
 };
 

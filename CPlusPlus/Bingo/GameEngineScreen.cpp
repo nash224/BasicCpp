@@ -1,7 +1,7 @@
 #include "PreCompile.h"
 #include "GameEngineScreen.h"
 
-GameEngineScreen::GameEngineScreen() 
+GameEngineScreen::GameEngineScreen()
 {
 }
 
@@ -105,20 +105,52 @@ void GameEngineScreen::Render()
 		return;
 	}
 
-	const std::uint32_t height = static_cast<std::uint32_t>(Buffer.size());
-	const std::uint32_t width  = static_cast<std::uint32_t>(Buffer[0].size());
-	std::wstring MSGwStr;
+	WriteMSGString();
 
-	for (std::uint32_t y = 0; y < height; y++)
+	std::wcout << AllMSG_WSTR << std::endl;
+
+	AllMSG_WSTR.clear();
+}
+
+void GameEngineScreen::WriteMSGString()
+{
+	std::uint32_t TargetSize = GetSizeToScreenTarget();
+	std::uint32_t MSGSize    = static_cast<std::uint32_t>(AllMSG_WSTR.size());
+
+	if (MSGSize < TargetSize)
 	{
-		for (std::uint32_t x = 0; x < width; x++)
+		AllMSG_WSTR.reserve(TargetSize);
+	}
+
+	for (const std::vector<wchar_t>& v : Buffer)
+	{
+		for (const wchar_t Unit : v)
 		{
-			MSGwStr.push_back(Buffer[y][x]);
+			AllMSG_WSTR.push_back(Unit);
 		}
 
-		std::wcout << MSGwStr << std::endl;
-		MSGwStr.clear();
+		AllMSG_WSTR.push_back(L'\n');
 	}
+}
+
+std::uint32_t GameEngineScreen::GetSizeToScreenBuffer()
+{
+	std::uint32_t ReturnValue = 0;
+
+	for (const std::vector<wchar_t>& v : Buffer)
+	{
+		ReturnValue += static_cast<std::uint32_t>(v.size());
+	}
+	
+	return ReturnValue;
+}
+
+std::uint32_t GameEngineScreen::GetSizeToScreenTarget()
+{
+	std::uint32_t ReturnValue = 0;
+	ReturnValue += GetSizeToScreenBuffer();
+	ReturnValue += static_cast<std::uint32_t>(Buffer.size());
+	return ReturnValue;
 }
 
 void GameEngineScreen::Clear()
